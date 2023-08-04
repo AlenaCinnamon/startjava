@@ -45,5 +45,24 @@ public class VariablesTheme {
         System.out.print("\nshort " + sht + ", "+ (++sht) + ", " + (--sht) + ", ");
         System.out.print("\nint " + i + ", " + (++i) + ", " + (--i) + ", ");
         System.out.print("\nlong " +lng + ", " + (++lng) + ", ");
+
+        System.out.println("\n5. Перестановка значений переменных");
+        int a = 2;
+        int b = 5;
+        int c;
+        System.out.println("с помощью третьей переменной");
+        System.out.println("исходные значения переменных a: " + a + ", " + "b: " + b);
+        c = a;
+        a = b;
+        b = c;
+        System.out.println("новые значения переменных a: " + a + ", " + "b: " + b);
+        System.out.println("с помощью арифметических операций");
+        a = a+b;
+        b = a-b;
+        a = a-b;
+        System.out.println("новые значения переменных a: " + a + ", " + "b: " + b);
+        System.out.println("с помощью побитовой операции ");
+        a = a^b^(b = a);
+        System.out.println("новые значения переменных a: " + a + ", " + "b: " + b);
     }
 }
