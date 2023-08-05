@@ -64,5 +64,37 @@ public class VariablesTheme {
         System.out.println("с помощью побитовой операции ");
         a = a^b^(b = a);
         System.out.println("новые значения переменных a: " + a + ", " + "b: " + b);
+
+        System.out.println("\n6. Вывод символов и их кодов");
+        char dollar = '$';
+        char asterisk = '*';
+        char atSign = '@';
+        char verticalBar = '|';
+        char tilde = '~';
+        System.out.println(dollar + " " + Integer.toBinaryString(dollar) + "\n" + asterisk +" " +  Integer.toBinaryString(asterisk));
+        System.out.println(atSign + " " + Integer.toBinaryString(atSign) + "\n" + verticalBar+" " +  Integer.toBinaryString(verticalBar));
+        System.out.println(tilde+ " " + Integer.toBinaryString(tilde));
+
+        System.out.println("\n7.Вывод в консоль ASCII-арт Дюка");
+        char s1 = '/';
+        char s2 = '\\';
+        char s3 = '(';
+        char s4 = ')';
+        char s5 = '_';
+        System.out.println("    "+ s1 + s2 + "    " + "\n   " + s1 + "  " + s2 + "   " + "\n  " + s1 + s5 + s3 + " " + s4 + s2+"  " + "\n " + s1 + "      " + s2 + " \n" + s1 + s5 + s5 + s5 + s5 + s1 + s2 + s5 + s5 +s2+" ");
+
+        System.out.println("\n8.Вывод количества сотен, десятков и единиц числа");
+        int n = 123;
+        int x = n/100;
+        int  y = n/10%10;
+        int z = n%10;
+        System.out.println("Число " + n + " содержит: " + "\nсотен - " + x + "\nдесятков - " + y + "\nединиц - " + z + "\ncумма его цифр = " + (x+y+z) + "\nпроизведение = " + (x*y*z));
+        
+        System.out.println("\n9.Вывод времени");
+        int time = 86399;
+        int hours = time/3600;
+        int min = time/60%60;
+        int sec = time%60;
+        System.out.println(hours + ":" + min + ":" + sec);
     }
 }
